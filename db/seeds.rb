@@ -16,6 +16,11 @@ Video.create(title: 'South Park', description: 'an awesome funny show', small_co
 Video.create(title: 'Monk', description: 'a drama funny show', small_cover_url: 'monk.jpg', large_cover_url: 'monk_large.jpg', category: tvdramas)
 Video.create(title: 'Family Guy', description: 'a funny comedy show', small_cover_url: 'family_guy.jpg', large_cover_url: 'monk_large.jpg', category: commedies)
 Video.create(title: 'Futurama', description: 'a funny space show', small_cover_url: 'futurama.jpg', large_cover_url: 'monk_large.jpg', category: commedies)
-Video.create(title: 'South Park', description: 'an awesome funny show', small_cover_url: 'south_park.jpg', large_cover_url: 'monk_large.jpg', category: commedies)
+south_park = Video.create(title: 'South Park', description: 'an awesome funny show', small_cover_url: 'south_park.jpg', large_cover_url: 'monk_large.jpg', category: commedies)
 Video.create(title: 'Monk', description: 'a drama funny show', small_cover_url: 'monk.jpg', large_cover_url: 'monk_large.jpg', category: tvdramas)
 Video.create(title: 'South Park', description: 'an awesome funny show', small_cover_url: 'south_park.jpg', large_cover_url: 'monk_large.jpg', category: commedies)
+
+muaz = User.create(full_name: "Syed", password: "password", email: "smuaz@asda.com")
+
+Review.create(user: muaz, video: south_park, rating: 4, content: "This is a really funny show!")
+Review.create(user: muaz, video: south_park, rating: 2, content: "This is not that bad but not really!")
